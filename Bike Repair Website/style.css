@@ -1,0 +1,86 @@
+html {
+  height: 100%;
+}
+body {
+  /* GRADIENT FEATURE */
+  background-image: linear-gradient(#fc5e55, #fa4083);
+
+  /* ADDING DEFAULT FONT FAMILY FOR THE WHOLE WEB PAGE */
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 1024px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  min-height: 100px;
+}
+
+main {
+  min-height: 300px;
+  display: flex;
+  /* TO ALIGN ITEMS VERTICALLY */
+  align-items: center;
+}
+
+.herobox1 {
+  /* width: 50%; */
+  flex: 2;
+}
+
+.herobox2 {
+  /* width: 50%; */
+  flex: 1;
+}
+
+.cards {
+  min-height: 300px;
+  background-color: rgb(47, 198, 33);
+  /* FLEX-BOX */
+  display: flex;
+  justify-content: space-between;
+}
+
+.card1 {
+  min-height: 300px;
+  background-color: rgb(227, 58, 137);
+  width: 30%;
+}
+
+.card2 {
+  min-height: 300px;
+  background-color: rgb(228, 124, 12);
+  width: 30%;
+}
+
+.card3 {
+  min-height: 300px;
+  background-color: rgb(125, 22, 70);
+  width: 30%;
+}
+
+.header-section {
+  /* FLEX-BOX */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* .logo {
+  flex: 2;
+}
+.buttons{
+  flex: 1;
+} */
+
+h1 {
+  font-size: 80px;
+  font-family: "Playfair Display", serif;
+}
