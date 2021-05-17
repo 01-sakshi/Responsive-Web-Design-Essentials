@@ -8,6 +8,14 @@ body {
   /* ADDING DEFAULT FONT FAMILY FOR THE WHOLE WEB PAGE */
   font-family: "Roboto", sans-serif;
   color: white;
+
+  /* Default Font Size i.e 16px */
+  font-size: 1.125rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .container {
@@ -31,6 +39,7 @@ main {
 .herobox1 {
   /* width: 50%; */
   flex: 2;
+  padding-right: 100px;
 }
 
 .herobox2 {
@@ -39,29 +48,37 @@ main {
 }
 
 .cards {
-  min-height: 300px;
-  background-color: rgb(47, 198, 33);
   /* FLEX-BOX */
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 .card1 {
-  min-height: 300px;
-  background-color: rgb(227, 58, 137);
+  background-image: url(images/image-background-card1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
   width: 30%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
 }
 
 .card2 {
-  min-height: 300px;
-  background-color: rgb(228, 124, 12);
+  background-image: url(images/image-background-card2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
   width: 30%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
 }
 
 .card3 {
-  min-height: 300px;
-  background-color: rgb(125, 22, 70);
+  background-image: url(images/image-background-card3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
   width: 30%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
 }
 
 .header-section {
@@ -73,14 +90,65 @@ main {
   padding-bottom: 20px;
 }
 
-/* .logo {
-  flex: 2;
-}
-.buttons{
-  flex: 1;
-} */
-
 h1 {
-  font-size: 80px;
+  /* 52px */
+  font-size: 3.25rem;
   font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.233);
+}
+
+p {
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.cards p {
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  /* margin: 20px 30px 20px 30px; */
+  margin-top: 10px;
+}
+
+.cards i {
+  font-size: 100px;
+  /* padding-top: 30px; */
+}
+
+.card1,
+.card2,
+.card3 {
+  padding: 30px 30px 20px 30px;
+  /* BORDER-BOX concept is related to FLEXBOX */
+  box-sizing: border-box;
+}
+
+.myButton {
+  background-color: white;
+  color: #fa4083;
+  font-family: "Playfair Display", serif;
+  /* PADDING goes CLOCK-WISE i.e TOP RIGHT BOTTOM LEFT */
+  padding: 11px 25px 11px 25px;
+
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.233);
+}
+
+.herobox2 img {
+  /* border-radius: 12px; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+}
+
+.buttons a.myButton{
+  margin-right: 5px;
+  background-color: transparent;
+  color: white;
 }
