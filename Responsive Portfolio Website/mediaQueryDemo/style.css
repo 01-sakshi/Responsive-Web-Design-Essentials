@@ -1,0 +1,21 @@
+/* GLOBAL VIEW aka DESKTOP VIEW*/
+h1 {
+  color: rgb(20, 212, 20);
+}
+
+/* 768px is a common Tablet/Portrait size. */
+/* TABLET VIEW */
+@media (max-width: 768px) {
+  h1 {
+    color: rebeccapurple;
+  }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 320px) {
+  h1 {
+    color: rgb(252, 58, 24);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}

@@ -1,0 +1,124 @@
+/* GLOBAL VIEW aka DESKTOP VIEW*/
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #ebebeb;
+  color: white;
+}
+
+.container {
+  min-height: 500px;
+  /* We cannot keep width: 1024px as it will always 
+  be 1024px only whether the device is tablet or
+    mobile or desktop. */
+  max-width: 1024px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  padding-top: 120px;
+}
+
+.header-container {
+  background-color: rgb(59, 56, 56);
+  /* BY DEFAULT WIDTH IS STRETCHED TO FULL SCREEN 
+  BECAUSE IT IS A BLOCK-LEVEL ELEMENT*/
+  min-height: 100px;
+
+  /* FIXING NAVIGATION BAR AT THE TOP */
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  /* background-color: violet; */
+  max-width: 1024px;
+  min-height: 100px;
+
+  /* margin-left: auto;
+  margin-right: auto;
+  OR */
+
+  /* Syntax-   margin: top-bottom left-right */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  background-color: rgb(43, 226, 147);
+  /* background-color: violet;
+  min-height: 200px; */
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.hide-desktop-only {
+  display: none;
+}
+
+.col img {
+  /* 100% SCALING METHOD */
+  width: 100%;
+  height: auto;
+}
+
+.col p {
+  /* font-size: 14px; */
+  /* 14 px * 0.0625 = 0.875 rem */
+  font-size: 0.875rem;
+
+  padding: 18px 24px;
+  line-height: 1.25rem;
+}
+
+/* To style only 1st line of paragraph tag */
+.col p::first-line,
+.boldlabel {
+  font-weight: bold;
+}
+
+.navbutton {
+  background-color: transparent;
+
+  border-style: solid;
+  border-width: 1px;
+  /* OR 
+  border: 1px solid white
+   */
+
+  padding: 11px 25px;
+  font-family: "Quicksand", sans-serif;
+
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 768px is a common Tablet/Portrait size. */
+/* TABLET VIEW */
+@media (max-width: 768px) {
+  .col {
+    width: 45%;
+  }
+  .hide-desktop-only {
+    display: block;
+  }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 320px) {
+  .col {
+    width: 100%;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
