@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
+
   padding-top: 120px;
 }
 
@@ -111,6 +111,24 @@ a {
   .hide-desktop-only {
     display: block;
   }
+  header,
+  .navbutton {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  /* To un-fix the nav-bar */
+  .header-container {
+    position: relative;
+  }
+  .container {
+    padding-top: 40px;
+  }
+
+  .logo {
+    padding: 40px 0;
+  }
 }
 
 /* MOBILE VIEW */
@@ -118,6 +136,7 @@ a {
   .col {
     width: 100%;
   }
+
   .hide-mobile {
     display: none;
   }
