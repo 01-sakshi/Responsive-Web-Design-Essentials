@@ -102,6 +102,23 @@ a {
   text-decoration: none;
 }
 
+/* Turning menu off for desktop view */
+.mob-wrapper {
+  display: none;
+}
+
+.mob-nav {
+  display: none;
+  position: absolute;
+  margin-left: 100px;
+}
+
+.navbtn {
+  background-color: coral;
+  padding: 15px 30px;
+  text-align: center;
+}
+
 /* 768px is a common Tablet/Portrait size. */
 /* TABLET VIEW */
 @media (max-width: 768px) {
@@ -111,11 +128,19 @@ a {
   .hide-desktop-only {
     display: block;
   }
-  header,
-  .navbutton {
+
+  header {
     display: block;
     text-align: center;
+  }
+  .navbutton {
+    display: block;
     margin-right: 0;
+  }
+
+  /* Turned off to display menu icon instead */
+  .navbutton {
+    display: none;
   }
 
   /* To un-fix the nav-bar */
@@ -128,6 +153,15 @@ a {
 
   .logo {
     padding: 40px 0;
+  }
+
+  /* Turning menu on for desktop view */
+  .mob-wrapper {
+    display: block;
+  }
+
+  .mob-nav {
+    display: none;
   }
 }
 
