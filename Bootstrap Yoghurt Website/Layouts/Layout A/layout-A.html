@@ -15,16 +15,33 @@
       crossorigin="anonymous"
     />
     <style>
-      .container {
+      .mybox {
+        background-color: hotpink;
+        min-height: 200px;
+        margin: 20px 10px;
+        padding: 20px;
       }
     </style>
   </head>
 
   <body>
+    <!-- Best Practise: Do not style .container, .row, .col classes of bootstrap, as it might 
+    hotch potch the design. Always use your own classes to add style. -->
+
+    <!-- Classes that start with "my" are user-defined classes and not bootstrap inbuilt classes. -->
+
     <div class="container">
       <div class="row">
-        <div class="col">Logo</div>
-        <div class="col">Nav</div>
+        <div class="col"><div class="mybox">Logo</div></div>
+        <div class="col"><div class="mybox">Nav</div></div>
+      </div>
+      <div class="row">
+        <div class="col"><div class="mybox">Hero Box</div></div>
+      </div>
+      <div class="row">
+        <div class="col"><div class="mybox">Feature 1</div></div>
+        <div class="col"><div class="mybox">Feature 2</div></div>
+        <div class="col"><div class="mybox">Feature 3</div></div>
       </div>
     </div>
   </body>

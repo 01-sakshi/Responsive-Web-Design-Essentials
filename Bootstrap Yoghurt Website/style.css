@@ -7,3 +7,13 @@ body {
 h1 {
   font-family: "Abril Fatface", cursive;
 }
+
+.jumbotron {
+  /* Completely see-through */
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.display-4 {
+  /* 70px*0.0625 = 4.375rem */
+  font-size: 4.375rem;
+}
