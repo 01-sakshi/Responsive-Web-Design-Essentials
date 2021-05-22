@@ -27,8 +27,18 @@
   <body>
     <div class="container">
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <!-- Logo image -->
+        <nav class="navbar navbar-light">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/logo-dans-meat-yogurt.svg"
+              width="100px"
+              height="100px"
+              alt="Logo"
+            />
+          </a>
+        </nav>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,18 +52,15 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
+          <ul class="navbar-nav ml-auto float-right">
+            <!-- Dropdown Button -->
+            <!-- In case of Bootsrap, we can even add inline CSS preferably. -->
+            <li
+              class="nav-item dropdown btn btn-outline-light mr-3"
+              style="width: 140px"
+            >
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle text-white"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -61,58 +68,83 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Dropdown
+                FLAVORS
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Ham</a>
+                <a class="dropdown-item" href="#">Beef</a>
+                <a class="dropdown-item" href="#">Chicken</a>
+                <a class="dropdown-item" href="#">Fish</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+
+            <!-- Normal Button -->
+            <li class="nav-item btn btn-outline-light" style="width: 140px">
+              <a class="nav-link text-white" href="#">CONTACT</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </nav>
 
       <!-- JumboTron -->
       <div class="jumbotron">
-        <h1 class="display-4 text-white">Hello, world!</h1>
-        <p class="lead">
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
-        </p>
-        <hr class="my-4" />
-        <p>
-          It uses utility classes for typography and spacing to space content
-          out within the larger container.
-        </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="row">
+          <div class="col-12 col-md-7 text-center text-md-left">
+            <h1 class="display-4 text-white my-drop-shadow">Thick & Creamy</h1>
+            <p class="lead">With real meat chunks</p>
+            <a
+              class="btn btn-outline-light btn-lg mt-4 py-3 px-5 mb-5"
+              href="#"
+              role="button"
+              >Pricing</a
+            >
+          </div>
+          <div class="col-12 col-md-5">
+            <img src="images/hero1.png" alt="Yoghurt image" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+
+      <!--  Founder's Message -->
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <img
+            src="images/headshot-dan.jpg"
+            alt=""
+            class="img-fluid border border-0 rounded-left border-lg"
+          />
+        </div>
+        <div
+          class="
+            col-12 col-md-8
+            bg-white
+            p-5
+            border border-dark
+            rounded-right
+            border-lg
+          "
+        >
+          <h2 class="text-success">Message from our Founder</h2>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque hic
+            exercitationem consectetur voluptate possimus ipsa enim fuga natus
+            ea ullam? Magni nesciunt dolorum veniam saepe ducimus cum maxime,
+            praesentium voluptates corrupti. Iusto, sequi? Autem sed corrupti
+            maxime ab eaque tempora.
+          </p>
+          <p class="text-justify">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos odio
+            aliquid vero suscipit maiores nam quidem, quisquam quae ipsum?
+            Aperiam, quod! Quis, dignissimos modi laudantium saepe velit
+            eveniet.
+          </p>
+        </div>
       </div>
 
       <!-- Carousel -->
       <div
         id="carouselExampleControls"
-        class="carousel slide"
+        class="carousel slide d-none d-md-block cPricing"
         data-ride="carousel"
       >
         <div class="carousel-inner">
@@ -145,40 +177,45 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </div>
 
-    <!-- Cards -->
-    <div class="card" style="width: 18rem">
-      <img src="images/product1.png" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem">
-      <img src="images/product2.png" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem">
-      <img src="images/product3.png" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <!-- Cards -->
+      <div class="card-deck my-5">
+        <div class="card shadow" style="width: 18rem">
+          <img src="images/product1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Ham Flavor</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium, nisi non ad commodi fugiat fuga nulla mollitia porro
+              quaerat quos natus assumenda! Veritatis, velit nihil.
+            </p>
+            <a href="#" class="btn btn-primary stretched-link">Pricing</a>
+          </div>
+        </div>
+        <div class="card shadow" style="width: 18rem">
+          <img src="images/product2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Ham Flavor</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium, nisi non ad commodi fugiat fuga nulla mollitia porro
+              quaerat quos natus assumenda! Veritatis, velit nihil.
+            </p>
+            <a href="#" class="btn btn-primary stretched-link">Pricing</a>
+          </div>
+        </div>
+        <div class="card shadow" style="width: 18rem">
+          <img src="images/product3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Ham Flavor</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium, nisi non ad commodi fugiat fuga nulla mollitia porro
+              quaerat quos natus assumenda! Veritatis, velit nihil.
+            </p>
+            <a href="#" class="btn btn-primary stretched-link">Pricing</a>
+          </div>
+        </div>
       </div>
     </div>
 

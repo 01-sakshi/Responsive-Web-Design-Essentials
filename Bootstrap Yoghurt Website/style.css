@@ -17,3 +17,24 @@ h1 {
   /* 70px*0.0625 = 4.375rem */
   font-size: 4.375rem;
 }
+
+/* We do not have any existing class in bootstrap to add drop shadow to text, so we have created our own class */
+.my-drop-shadow {
+  /* syntax:    x   y  blury color */
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.158);
+}
+
+.lead {
+  color: white;
+  font-size: 2.2rem;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background-color: #00bbc9;
+  border-color: #00bbc9;
+}
